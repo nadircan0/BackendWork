@@ -16,3 +16,5 @@
 /Users/cansnow/Desktop/deneme/EDC#Course/Business/obj/Debug/net9.0/refint/Business.dll
 /Users/cansnow/Desktop/deneme/EDC#Course/Business/obj/Debug/net9.0/Business.pdb
 /Users/cansnow/Desktop/deneme/EDC#Course/Business/obj/Debug/net9.0/ref/Business.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/Business/bin/Debug/net9.0/Core.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/Business/bin/Debug/net9.0/Core.pdb

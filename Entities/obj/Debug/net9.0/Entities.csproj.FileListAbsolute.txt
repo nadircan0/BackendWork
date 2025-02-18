@@ -10,3 +10,7 @@
 /Users/cansnow/Desktop/deneme/EDC#Course/Entities/obj/Debug/net9.0/refint/Entities.dll
 /Users/cansnow/Desktop/deneme/EDC#Course/Entities/obj/Debug/net9.0/Entities.pdb
 /Users/cansnow/Desktop/deneme/EDC#Course/Entities/obj/Debug/net9.0/ref/Entities.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/Entities/bin/Debug/net9.0/Core.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/Entities/bin/Debug/net9.0/Core.pdb
+/Users/cansnow/Desktop/deneme/EDC#Course/Entities/obj/Debug/net9.0/Entities.csproj.AssemblyReference.cache
+/Users/cansnow/Desktop/deneme/EDC#Course/Entities/obj/Debug/net9.0/Entities.csproj.Up2Date

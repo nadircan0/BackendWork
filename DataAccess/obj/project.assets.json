@@ -989,9 +989,25 @@
           }
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
@@ -2749,6 +2765,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
@@ -2757,6 +2778,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Core >= 1.0.0",
       "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2"
     ]
@@ -2786,6 +2808,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj"
+            },
             "/Users/cansnow/Desktop/deneme/EDC#Course/Entities/Entities.csproj": {
               "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Entities/Entities.csproj"
             }
