@@ -1,0 +1,16 @@
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/bin/Debug/net9.0/DataAccess.deps.json
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/bin/Debug/net9.0/DataAccess.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/bin/Debug/net9.0/DataAccess.pdb
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/bin/Debug/net9.0/Entities.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/bin/Debug/net9.0/Entities.pdb
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.csproj.AssemblyReference.cache
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.AssemblyInfoInputs.cache
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.AssemblyInfo.cs
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.csproj.CoreCompileInputs.cache
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.sourcelink.json
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.csproj.Up2Date
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/refint/DataAccess.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/DataAccess.pdb
+/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/Debug/net9.0/ref/DataAccess.dll
