@@ -5,7 +5,9 @@ namespace Core.Utilities.Results;
 public class Result : IResult
 {
 
-    
+    public bool Success { get;  }
+
+    public string Message { get;  }
 
     public Result(bool success, string message):this(success)
     {
@@ -19,10 +21,6 @@ public class Result : IResult
     {
         Success = success;
     }
-
-    public bool Success { get;  }
-
-    public string Message { get;  }
 
 
 
