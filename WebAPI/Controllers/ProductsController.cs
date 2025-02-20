@@ -1,3 +1,8 @@
+using System.Reflection.Metadata.Ecma335;
+using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,10 +12,19 @@ namespace WebAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        IProductService _productService;
 
-        public String Get()
+        public ProductsController(IProductService productService)
         {
-            return "Hello";
+            _productService = productService;
+        }
+
+        [HttpGet]
+        public List<Product> Get()
+        {
+
+            var result = _productService.GetAll();
+            return result.Data;
         }
  
         

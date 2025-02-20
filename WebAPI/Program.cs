@@ -1,27 +1,47 @@
+using System.Globalization;
+using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// 1) Uygulamanın dinleyeceği URL ve portu belirleyelim (HTTP için 5119)
+builder.WebHost.UseUrls("http://localhost:5119");
+
+// Controller'ları uygulamaya kaydet
+
+builder.Services.AddControllers();
+builder.Services.AddSingleton<IProductService, ProductManager>();
+builder.Services.AddSingleton<IProductDal, EfProductDal>();
+
+
+// 2) Swashbuckle ile Swagger servislerini ekleyelim
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+// 3) Swagger middleware’lerini ekleyelim
+app.UseSwagger();
+app.UseSwaggerUI();
 
+// 4) Test aşamasında HTTPS yönlendirmesi yapmak istemiyorsak kapatalım
+//    (Eğer HTTPS sertifikanız düzgün ayarlıysa kullanmaya devam edebilirsiniz)
 app.UseHttpsRedirection();
 
+// 5) WeatherForecast endpoint’i
 var summaries = new[]
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    "Freezing", "Bracing", "Chilly", "Cool",
+    "Mild", "Warm", "Balmy", "Hot",
+    "Sweltering", "Scorching"
 };
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -29,13 +49,22 @@ app.MapGet("/weatherforecast", () =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
+
     return forecast;
 })
 .WithName("GetWeatherForecast");
 
+
+
+
+
+app.MapControllers();
 app.Run();
 
+// 6) WeatherForecast kayıt tipi
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
+    // Fahrenheit hesabını basitçe property ile yapalım
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
 }
