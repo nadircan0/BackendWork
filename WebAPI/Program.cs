@@ -1,4 +1,6 @@
 using System.Globalization;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Abstract;
@@ -13,8 +15,20 @@ builder.WebHost.UseUrls("http://localhost:5119");
 // Controller'ları uygulamaya kaydet
 
 builder.Services.AddControllers();
-builder.Services.AddSingleton<IProductService, ProductManager>();
-builder.Services.AddSingleton<IProductDal, EfProductDal>();
+//builder.Services.AddSingleton<IProductService, ProductManager>();
+//builder.Services.AddSingleton<IProductDal, EfProductDal>();
+
+// Autofac için Service Provider Factory ekleniyor
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+
+// Autofac Container yapılandırması
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
+{
+    containerBuilder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
+    containerBuilder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
+});
+
+
 
 
 // 2) Swashbuckle ile Swagger servislerini ekleyelim

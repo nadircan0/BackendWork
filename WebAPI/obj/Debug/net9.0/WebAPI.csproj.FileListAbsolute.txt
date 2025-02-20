@@ -82,3 +82,8 @@
 /Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/Core.pdb
 /Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/DataAccess.pdb
 /Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/Entities.pdb
+/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/Autofac.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/Autofac.Extensions.DependencyInjection.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/Autofac.Extras.DynamicProxy.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/Castle.Core.dll
+/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
