@@ -1,4 +1,5 @@
 using System;
+using System.Data;
 using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
@@ -33,7 +34,10 @@ public class ProductManager : IProductService
 
     public IDataResult<List<Product>> GetAll()
     {
-      
+        if (DateTime.Now.Hour == 19)
+        {
+            return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
+        }
 
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
     }
