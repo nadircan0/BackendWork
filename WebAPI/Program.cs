@@ -26,6 +26,7 @@ builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
 {
     containerBuilder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
     containerBuilder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
+    containerBuilder.RegisterModule(new Business.DependencyResolvers.AutoFac.AutoFacBusinsessModule());
 });
 
 
