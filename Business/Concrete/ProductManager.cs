@@ -28,7 +28,8 @@ public class ProductManager : IProductService
 
     }
 
-
+    //claim
+    //[SecuredOperation("prdocut.add, admin")]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Add(Product product)
     {
@@ -38,7 +39,7 @@ public class ProductManager : IProductService
                         CheckIfProductCountOfCategoryCorrect(product.CategoryId),
                         CheckIfCategoryLimitExceded());
 
-        if(result == null)
+        if(result != null)
         {
             return result;    
         }
