@@ -1,6 +1,7 @@
 using System;
 using System.Data;
 using Business.Abstract;
+using Business.BussinessAspects.Autofac;
 using Business.CCS;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
@@ -29,7 +30,7 @@ public class ProductManager : IProductService
     }
 
     //claim
-    //[SecuredOperation("prdocut.add, admin")]
+    [SecuredOperation("product.add, admin")]
     [ValidationAspect(typeof(ProductValidator))]
     public IResult Add(Product product)
     {

@@ -1,6 +1,7 @@
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/bin/Debug/net9.0/Core.deps.json
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/bin/Debug/net9.0/Core.dll
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/bin/Debug/net9.0/Core.pdb
+/Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/Core.csproj.AssemblyReference.cache
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/Core.GeneratedMSBuildEditorConfig.editorconfig
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/Core.AssemblyInfoInputs.cache
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/Core.AssemblyInfo.cs
@@ -10,4 +11,3 @@
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/refint/Core.dll
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/Core.pdb
 /Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/ref/Core.dll
-/Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/Debug/net9.0/Core.csproj.AssemblyReference.cache
