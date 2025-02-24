@@ -10,7 +10,7 @@ namespace DataAccess.Concrete.EntityFramework;
 
 public class EfProductDal : EfEntityRepositoryBase<Product, NorthWindContext>, IProductDal
 {
-    public List<ProductDetailDto> GetProductDetais()
+    public List<ProductDetailDto> GetProductDetails()
     {
         using (NorthWindContext context = new NorthWindContext())
         {

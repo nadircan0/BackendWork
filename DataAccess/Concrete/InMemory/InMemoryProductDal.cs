@@ -67,7 +67,7 @@ public class InMemoryProductDal : IProductDal
 
     public Product Get(Expression<Func<Product, bool>> filter)
     {
-        throw new NotImplementedException();
+        return _products.AsQueryable().FirstOrDefault(filter);
     }
 
     public List<Product> GetAll()
@@ -77,7 +77,8 @@ public class InMemoryProductDal : IProductDal
 
     public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
     {
-        throw new NotImplementedException();
+        return filter == null?
+        this.GetAll() : _products.AsQueryable().Where(filter).ToList();
     }
 
     public List<Product> GetAllByCategory(int categoryId)
@@ -85,7 +86,7 @@ public class InMemoryProductDal : IProductDal
         return _products.Where(p => p.CategoryId == categoryId).ToList();
     }
 
-    public List<ProductDetailDto> GetProductDetais()
+    public List<ProductDetailDto> GetProductDetails()
     {
         throw new NotImplementedException();
     }
