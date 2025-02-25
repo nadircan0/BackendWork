@@ -23,9 +23,7 @@ builder.WebHost.UseUrls("http://localhost:5119");
 // Controller'ları uygulamaya kaydet
 
 builder.Services.AddControllers();
-//builder.Services.AddSingleton<IProductService, ProductManager>();
-//builder.Services.AddSingleton<IProductDal, EfProductDal>();
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
 
 var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();

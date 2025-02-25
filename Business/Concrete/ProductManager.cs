@@ -53,6 +53,23 @@ public class ProductManager : IProductService
         return new SuccessResult(Messages.ProductAdded);
     }
 
+    [SecuredOperation("product.delete, admin")]
+    [CacheRemoveAspect("IProductService.Get")]
+    public IResult Delete(Product product)
+    {
+        IResult result = BussinessRules.Run(
+            CheckIfProductNameExist(product.ProductName));
+
+        if(result != null){
+            return new ErrorResult(Messages.NoProduct);
+        }
+
+        _productDal.Delete(product);
+        return new SuccessResult(Messages.ProductDeleted);    
+    }
+
+
+
     [CacheAspect]
     public IDataResult<List<Product>> GetAll()
     {
@@ -64,6 +81,7 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
     }
 
+    [CacheAspect]
     public IDataResult<List<Product>> GetAllByCategoryId(int id)
     {
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id));
@@ -82,9 +100,10 @@ public class ProductManager : IProductService
         return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max));
     }
 
+    [CacheAspect]
     public IDataResult<List<ProductDetailDto>> GetProductDetails()
     {
-        return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetais());
+        return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
     }
 
     [ValidationAspect(typeof(ProductValidator))]
@@ -135,4 +154,6 @@ public class ProductManager : IProductService
     {
         throw new NotImplementedException();
     }
+
+
 }

@@ -1,5 +1,6 @@
 using System;
 using Castle.DynamicProxy;
+using Core.Aspects.Constants;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Interceptors;
 using FluentValidation;
@@ -13,7 +14,7 @@ public class ValidationAspect : MethodInterception
     {
         if (!typeof(IValidator).IsAssignableFrom(validatorType))
         {
-            throw new System.Exception("AspectMessages.WrongValidationType");
+            throw new System.Exception(AspectsMesssages.WrongValidationType);
         }
 
         _validatorType = validatorType;

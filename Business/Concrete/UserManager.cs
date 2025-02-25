@@ -20,6 +20,7 @@ namespace Business.Concrete;
             return  new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user));
         }
 
+
         public IResult Add(User user)
         {
             _userDal.Add(user);

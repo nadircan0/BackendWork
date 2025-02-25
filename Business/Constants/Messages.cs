@@ -10,6 +10,8 @@ public static class Messages
     internal static string MaintenanceTime = "Maintenance Time";
     internal static string ProductsListed = "Products Listed";
     internal static string ProductNameAlreadyExist = "product name allready exist";
+    internal static string NoProduct = "Product is not found";
+    internal static string ProductDeleted = "Product deleted";
     internal static string CategoryLimitExceded = "Category Limit Exceded";
     internal static string AuthorizationDenied = "Authorization Denied";
     internal static string UserRegistered = "User Registered";
