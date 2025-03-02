@@ -3322,11 +3322,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/DataAccess.csproj",
+      "projectUniqueName": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/DataAccess.csproj",
+      "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/DataAccess.csproj",
       "packagesPath": "/Users/cansnow/.nuget/packages/",
-      "outputPath": "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/obj/",
+      "outputPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cansnow/.nuget/NuGet/NuGet.Config"
@@ -3341,11 +3341,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj"
             },
-            "/Users/cansnow/Desktop/deneme/EDC#Course/Entities/Entities.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Entities/Entities.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Entities/Entities.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Entities/Entities.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wrS2WSaYh3w=",
+  "dgSpecHash": "YcBKsjdaVPc=",
   "success": true,
-  "projectFilePath": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj",
+  "projectFilePath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj",
   "expectedPackageFiles": [
     "/Users/cansnow/.nuget/packages/autofac/8.2.0/autofac.8.2.0.nupkg.sha512",
     "/Users/cansnow/.nuget/packages/autofac.extensions.dependencyinjection/10.0.0/autofac.extensions.dependencyinjection.10.0.0.nupkg.sha512",

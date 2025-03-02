@@ -3365,11 +3365,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cansnow/Desktop/deneme/EDC#Course/ConsoleUI/ConsoleUI.csproj",
+      "projectUniqueName": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/ConsoleUI/ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/ConsoleUI/ConsoleUI.csproj",
+      "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/ConsoleUI/ConsoleUI.csproj",
       "packagesPath": "/Users/cansnow/.nuget/packages/",
-      "outputPath": "/Users/cansnow/Desktop/deneme/EDC#Course/ConsoleUI/obj/",
+      "outputPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/ConsoleUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cansnow/.nuget/NuGet/NuGet.Config"
@@ -3384,14 +3384,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/cansnow/Desktop/deneme/EDC#Course/Business/Business.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Business/Business.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Business/Business.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Business/Business.csproj"
             },
-            "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/DataAccess.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/DataAccess.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/DataAccess.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/DataAccess.csproj"
             },
-            "/Users/cansnow/Desktop/deneme/EDC#Course/Entities/Entities.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Entities/Entities.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Entities/Entities.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Entities/Entities.csproj"
             }
           }
         }

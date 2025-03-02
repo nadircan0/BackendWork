@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj": {}
+    "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj": {}
   },
   "projects": {
-    "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj": {
+    "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj",
+        "projectUniqueName": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj",
+        "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj",
         "packagesPath": "/Users/cansnow/.nuget/packages/",
-        "outputPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/obj/",
+        "outputPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cansnow/.nuget/NuGet/NuGet.Config"

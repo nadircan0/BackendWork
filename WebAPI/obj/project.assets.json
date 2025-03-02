@@ -3545,11 +3545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/WebAPI.csproj",
+      "projectUniqueName": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/WebAPI/WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/WebAPI.csproj",
+      "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/WebAPI/WebAPI.csproj",
       "packagesPath": "/Users/cansnow/.nuget/packages/",
-      "outputPath": "/Users/cansnow/Desktop/deneme/EDC#Course/WebAPI/obj/",
+      "outputPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cansnow/.nuget/NuGet/NuGet.Config"
@@ -3564,14 +3564,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/cansnow/Desktop/deneme/EDC#Course/Business/Business.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Business/Business.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Business/Business.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Business/Business.csproj"
             },
-            "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/Core/Core.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/Core/Core.csproj"
             },
-            "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/DataAccess.csproj": {
-              "projectPath": "/Users/cansnow/Desktop/deneme/EDC#Course/DataAccess/DataAccess.csproj"
+            "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/DataAccess.csproj": {
+              "projectPath": "/Users/cansnow/Desktop/Software/deneme/BackendWorking/BackendWork/DataAccess/DataAccess.csproj"
             }
           }
         }
